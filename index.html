@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>formular</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&amp;subset=latin-ext" rel="stylesheet">
+</head>
+<body>
+	
+	<div id="wrapper">
+		<table>
+			<tr>
+				<td class="first">
+					<span class="name">FIRST NAME</span>
+				</td>
+				<td>
+					<input id="fName" class="getSizeFromInput" type="text" name="name" placeholder="First Name" value="">
+					<div id="errfname"></div>
+				</td>
+			</tr>
+			<tr>
+				<td class="first">
+					<span class="name">LAST NAME</span> 
+				</td>
+				<td>
+					<input id="lName" class="setSize" type="text" name="lastname" placeholder="Last Name" value="">
+					<div id="errlname"></div>
+				</td>
+			</tr>
+			<tr>
+				<td class="first">
+					<span class="name">DATE</span> 
+				</td>
+				<td>
+					<input class="setSize" type="date" name="date"><br>
+					<div id="errdate"></div>
+				</td>
+			</tr>
+			<tr>
+				<td class="first">
+					<span class="name">GENDER</span>		
+				</td>
+				<td>
+			 		<input type="radio" name="gender" value="1"><span>Male</span><br>
+			 		<input type="radio" name="gender" value="2"><span>Female</span>
+				</td>
+			</tr>
+			<tr>
+				<td class="first">
+					<span class="name">SHOW GENDER</span>
+				</td>
+				<td>
+					<select>
+						<option value="Both" selected>Both</option>
+						<option value="Female">Female</option>
+						<option value="Male">Male</option>
+					</select><br>
+					<input type="checkbox" name="age" value="1"> <span style="font-size: .8em; margin-top: 5px; display: inline-block;">SHOW AGE</span> 
+				</td>
+			</tr>
+		</table>
+		<div id="btn"><button class="send" type="submit" name="odoslat">submit</button></div>
+	</div>
+
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
