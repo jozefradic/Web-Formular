@@ -1,0 +1,14 @@
+body {
+    background-color: lightblue;
+
+}
+
+.font {
+  font-size: 200%;
+  font-family: 'Frankenstein';
+  src: url('http://www.fontsaddict.com/fontface/frankenstein.TTF');
+}
+
+table, th, td {
+   border: 1px solid brown;
+  }
